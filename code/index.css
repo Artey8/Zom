@@ -1,0 +1,147 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+#game-canvas {
+  border: 4px solid darkgray;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(107, 107, 107);
+}
+
+#menu-container {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid white;
+  border-radius: 20px;
+  height: 600px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#banners {
+  position: relative;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+#banners > h1 {
+  width: 100%
+}
+
+#start-wave-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 20px;
+  transition: .4s;
+}
+#start-wave-button:hover {
+  font-size: 15px;
+  border-width: 3px;
+}
+
+#wave-banner {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+}
+
+.menu-button {
+  position: absolute;
+  color: white;
+  text-align: center;
+  height: 10%;
+  width: 45%;
+  background-color: black;
+  border: 6px solid white;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  transition: .4s;
+}
+.menu-button:hover {
+  border-width: 3px;
+  font-size: 30px;
+}
+#exit-button {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: .4s;
+}
+#exit-button:hover {
+  font-size: 15px;
+  border-width: 3px;
+}
+
+#store {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.icon-button {
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .4s;
+}
+.icon-button:hover {
+  border-color: gray;
+}
+
+#open-store-button {
+  background-image: url("../assets/shopping_cart.png");
+  position: relative;
+  float: right;
+  margin: 24px;
+}
+
+#close-store-button {
+  top: 0;
+  background-image: url("../assets/back.png");
+  position: absolute;
+  margin: 16px;
+}
+
+#store-body {
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 750px;
+}
